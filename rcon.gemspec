@@ -1,6 +1,6 @@
 spec = Gem::Specification.new
 spec.name = "rcon"
-spec.version = "0.2.1"
+spec.version = "0.2.2"
 spec.author = "Erik Hollensbe"
 spec.email = "erik@hollensbe.org"
 spec.summary = "Ruby class to work with Quake 1/2/3, Half-Life and Source Engine rcon (remote console)"
