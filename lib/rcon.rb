@@ -249,7 +249,7 @@ class RCon::Query::Original < RCon::Query
     @socket.print "\xFF" * 4 + "rcon #{@challenge_id} \"#{@password}\" #{@request}\n\x00"
     @response = retrieve_socket_data
 
-    @response.sub! /^\xFF\xFF\xFF\xFF#{@server_type}/, ""
+    @response.sub! %/^\xFF\xFF\xFF\xFF#{@server_type}/, ""
     @response.sub! /\x00+$/, ""
     
     return @response
